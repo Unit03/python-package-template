@@ -1,0 +1,7 @@
+[run]
+branch = True
+source = foo/
+omit = */_version.py
+
+[report]
+show_missing = True
