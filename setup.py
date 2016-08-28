@@ -8,13 +8,6 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
 
-tests_require = [
-    "flake8",
-    "pytest",
-    "pytest-cov",
-    "tox",
-]
-
 setup(
     name="foo",
     use_scm_version={
@@ -28,12 +21,15 @@ setup(
     install_requires=[
     ],
     setup_requires=[
-        "pytest-runner",
         "setuptools_scm>=1.10.1,<2.0.0",
     ],
-    tests_require=tests_require,
     extras_require={
-        "tests": tests_require,
+        "tests": [
+            "flake8",
+            "pytest",
+            "pytest-cov",
+            "tox",
+        ],
     },
 
     classifiers=[

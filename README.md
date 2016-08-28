@@ -31,11 +31,6 @@ must, of course, have `tox` installed.
 tox
 ```
 
-or only on current Python:
-```bash
-python setup.py test
-```
-
 If you want to use `py.test` or `flake8` directly (useful for development),
 install dependencies first:
 ```bash
